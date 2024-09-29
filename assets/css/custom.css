@@ -1,0 +1,46 @@
+/* Button Styles */
+.btn-animated {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2d5e8b;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Menambahkan jarak antara teks dan tombol */
+}
+
+.btn-animated:hover {
+    background-color: #2d5e8b; /* Warna latar belakang tetap */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    color: #000000; /* Ubah warna teks menjadi biru saat hover */
+}
+
+.btn-animated:active {
+    color: white; /* Ubah warna teks menjadi putih saat diklik */
+}
+
+/* Additional styling to ensure button alignment */
+.content {
+    text-align: left;
+}
+
+.faq-container .faq-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.faq-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.faq-content p {
+    margin-bottom: 15px; /* Jarak antara teks dan tombol */
+}

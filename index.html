@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rohis Riyadushshalihin</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/ROHIS.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM2pW4g5U8A2z7l1xl/ZuQv04mGoDJy7Bo5D7H" crossorigin="anonymous">
+  
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/ROHIS.png" alt="">
+        <h1 class="sitename">Rohis</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why-us">Departemen</a></li>
+          <li><a href="#services">Schedule</a></li>
+          <li><a href="#portfolio">Documentation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <h1>Rohis Riyadushshalihin</h1>
+        <p>Ilmu, Amal, Dakwah.. Allahuakbar!!</p>
+        <div class="d-flex">
+          <!-- About Us Button triggers modal -->
+          <a href="#" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"> </i> Watch Video</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/ROHIS.png" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+</section><!-- /Hero Section -->
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Rohis Riyadushshalihin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Embed YouTube Video -->
+        <iframe id="mp4-v" width="100%" height="315" src="./assets/img/Video.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script to handle video reset on modal close -->
+<script>
+  const videoModal = document.getElementById('videoModal');
+  const videoIframe = document.getElementById('mp4-v');
+
+  videoModal.addEventListener('hide.bs.modal', function () {
+    // Remove the src attribute to stop the video
+    videoIframe.src = "";
+  });
+
+  videoModal.addEventListener('show.bs.modal', function () {
+    // Restore the src attribute when the modal is opened
+    videoIframe.src = "./assets/img/Video.mp4";
+  });
+</script>
+
+    <!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Us</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Rohis Riyadushshalihin adalah organisasi yang berkomitmen untuk membentuk generasi muda Islami yang berakhlakul karimah, serta mengajak seluruh anggota untuk lebih mendekatkan diri kepada Allah SWT melalui kegiatan-kegiatan rohani yang positif.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Mengajarkan nilai-nilai Islami yang menuntun pada akhlak mulia.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Menyediakan ruang untuk pengembangan spiritual dan intelektual generasi muda.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Membina ukhuwah Islamiyah antar sesama anggota dan masyarakat.</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>Rohis Riyadushshalihin berusaha menjadi wadah bagi setiap individu yang ingin memperdalam ilmu agama Islam dan memperkuat iman. Kami juga aktif dalam berbagai kegiatan sosial yang bertujuan untuk memberikan manfaat bagi umat.</p>
+        <a href="dakwahkumpulan.html" class="read-more"><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+
+    <!-- Why Us Section -->
+<section id="why-us" class="section why-us light-background" data-builder="section">
+
+  <div class="container-fluid">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+          <h3><span>Departemen Rohis Riyadushshalihin </span><strong>mendukung pengembangan spiritual dan pendidikan</strong></h3>
+          <p>
+            Di Rohis Riyadushshalihin, kami memiliki lima departemen yang berfokus pada pengembangan siswa dalam berbagai aspek keislaman dan kepemimpinan.
+          </p>
+        </div>
+
+        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="faq-item">
+            <h3><span>01</span> Departemen Dakwah</h3>
+            <div class="faq-content">
+              <p>Departemen Dakwah bertanggung jawab dalam menyebarkan nilai-nilai Islam melalui ceramah, kajian, dan kegiatan keagamaan. Dengan pendekatan yang ramah dan menyentuh, departemen ini bertujuan untuk meningkatkan pemahaman dan kecintaan siswa terhadap agama Islam. Kegiatan utama termasuk pengajian rutin, tabligh akbar, dan pelatihan dakwah yang melibatkan seluruh anggota Rohis. 
+              <br>  
+              <a href="dakwah.html" class="btn-animated">Selengkapnya</a></p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span>02</span> Departemen BRT ( Biro Rumah Tangga )</h3>
+            <div class="faq-content">
+              <p>Departemen BRT ( Biro Rumah Tangga ) bertanggung jawab atas fasilitas masjid, kebutuhan logistik, dan kebersihan dan kemakmuran masjid. 
+              <br>  
+              <a href="BRT.html" class="btn-animated">Selengkapnya</a></p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span>03</span> Departemen Humas (Hubungan Masyarakat)</h3>
+            <div class="faq-content">
+              <p>
+                Departemen Humas memainkan peran kunci dalam menjembatani komunikasi antara Rohis Riyadushshalihin dengan masyarakat serta pihak eksternal. Tanggung jawabnya meliputi penyebaran informasi mengenai program dan kegiatan Rohis melalui berbagai platform, termasuk media sosial, publikasi, dan acara. Selain itu, departemen ini juga membangun hubungan dengan organisasi lain dan berupaya memperkuat citra positif Rohis di mata masyarakat.
+                <br>
+                <a href="Humas.html" class="btn-animated">Selengkapnya</a>
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          
+
+          <div class="faq-item">
+            <h3><span>04</span> Departemen TI ( Teknologi Islami )</h3>
+            <div class="faq-content">
+              <p>Departemen Teknologi Islami bertanggung jawab untuk mengembangkan dan mengelola konten digital yang mendukung kegiatan Rohis Riyadushshalihin. Dengan memanfaatkan platform media sosial, departemen ini menciptakan konten yang menarik dan informatif, seperti video, infografis, dan artikel yang mengedukasi dan menginspirasi. Tujuannya adalah untuk memperluas jangkauan dakwah serta membangun komunitas yang aktif dan terlibat di dunia maya. 
+              <br>  
+              <a href="TI.html" class="btn-animated">Selengkapnya</a></p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>
+              <span>05</span> Departemen Ekonomi
+            </h3>
+            <div class="faq-content">
+              <p>
+                Departemen Ekonomi berfokus pada pengembangan keterampilan kewirausahaan dan manajemen keuangan di kalangan anggota Rohis Riyadushshalihin. Departemen ini menyelenggarakan pelatihan dan workshop yang bertujuan untuk meningkatkan pemahaman siswa tentang prinsip-prinsip ekonomi syariah, investasi, dan pengelolaan dana.
+                <br>
+                <a href="Ekonomi.html" class="btn-animated">Selengkapnya</a>
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+          
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+        <img src="assets/img/ROHIS.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Why Us Section -->
+
+
+
+    
+
+    <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>KEGIATAN EKSKUL ROHIS</h2>
+    <p>Ekskul Rohis Riyadushshalihin setiap hari selasa, kamis, dan jum'at</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-book-fill"></i></div> <!-- Icon for Tahfidz Quran -->
+          <h4><a href="kegiataneskulrohisTahfidz.html" class="stretched-link">Tahfidz Quran</a></h4>
+          <p>Menghafal dan memahami Al-Qur'an dengan baik dan benar.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-megaphone-fill"></i></div> <!-- Icon for Tabligh Rohis -->
+          <h4><a href="kegiataneskulrohisTabligh.html" class="stretched-link">Tabligh Rohis</a></h4>
+          <p>Menyebarkan informasi dan ajakan untuk kegiatan Rohis.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-music-note-beamed"></i></div> <!-- Icon for Hadroh and Marawis -->
+          <h4><a href="kegiataneskulrohisHDM.html" class="stretched-link">Hadroh dan Marawis</a></h4>
+          <p>Kegiatan seni musik islami yang mendidik.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+
+</section><!-- /Services Section -->
+
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="./assets/img/ROHIS.png" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>KUMPULAN LEMBARAN DAKWAH ANAK ROHIS ^_^</h3>
+            <p>Kumpulan Lembaran Dakwah Anak Rohis adalah media dakwah ringan yang dirancang untuk menyebarkan nilai-nilai Islam, terutama kepada generasi muda. Setiap edisi berisi topik menarik seperti akhlak, kisah nabi, dan tips hidup Islami, dikemas dengan bahasa sederhana dan desain menarik. Lembaran ini diharapkan memudahkan pembaca memahami Islam dan menjadikan dakwah sebagai bagian dari kehidupan sehari-hari.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="kumpulan.html"><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>DOKUMENTASI KEGIATAN SETIAP DEPARTEMEN</h2>
+    <p></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">DAKWAH</li>
+        <li data-filter=".filter-product">BRT</li>
+        <li data-filter=".filter-branding">HUMAS</li>
+        <li data-filter=".filter-ekonomi">EKONOMI</li> <!-- New filter for Ekonomi -->
+        <li data-filter=".filter-ti">TI</li> <!-- New filter for TI -->
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="./assets/img/Dakwah.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Departemen Dakwah</h4>
+            <p>Program : Kerja Departemen Dakwah</p>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="./assets/img/Brt.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Departemen BRT</h4>
+            <p>Program : Kerja Departemen BRT</p>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="./assets/img/Humas.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Departemen HUMAS</h4>
+            <p>Program : Kerja Departemen Humas</p>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ekonomi">
+          <img src="./assets/img/Ekonomi.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Departemen Ekonomi</h4>
+            <p>Program : Kerja Departemen Ekonomi</p>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ti">
+          <img src="./assets/img/TI.jpeg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Departemen TI</h4>
+            <p>Program : Kerja Departemen Teknologi Islami</p>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Silahkan hubungi kami jika ada yang ingin anda tanyakan.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Jl. Barokah No. 06 Desa Wanaherang Kec. Gunungputri Kab. Bogor, Wanaherang, Kec. Gunungputri, Kab. Bogor Prov. Jawa Barat</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+62-821-1141-5282</p>
+                  <br>
+                  <p>+62-857-7147-7168</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-instagram flex-shrink-0"></i>
+                <div>
+                    <h3>Follow Us on Instagram</h3>
+                    <p>@rohisskiel</p>
+                </div>
+            </div><!-- End Info Item -->
+            
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7652061615686!2d106.9398724!3d-6.424205799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69951937470403%3A0x935566887962e60!2sJl.%20Barokah%20No.6%2C%20Wanaherang%2C%20Kec.%20Gn.%20Putri%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016965!5e0!3m2!1sid!2sid!4v1727442115241!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Rohis Riyadushshalihin</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Barokah No. 06</p>
+            <p>Gunungputri, Bogor Jawa Barat</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62-877-8710-1391</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+        </div>
+      
+      <div class="col-lg-2 col-md-3 footer-links">
+      </div>
+      
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Follow sosial media kami @rohisskiel untuk informasi kegiatan atau informasi lainnya lebih lanjut.</p>
+          <div class="social-links d-flex">
+            <a href="https://www.instagram.com/rohisskiel?igsh=ZnlxaWJ4d3hvY3hn"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&reg;<span>Created</span> <strong class="px-1 sitename">Rohis Riyadushshalihin</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
