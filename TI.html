@@ -23,33 +23,36 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+    .main {
+  padding-top: 80px; /* Atau sesuaikan dengan tinggi header Anda */
+}
 
+header {
+  z-index: 1000; /* Memberikan prioritas lebih tinggi untuk header */
+}
+  </style>
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/ROHIS.png" alt="">
-        <h1 class="sitename">Rohis Riyadushshalihin</h1>
+        <h1 class="sitename">Rohis</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                  <li><a href="index.html" class="active">Home</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+          <li><a href="index.html" class="active">Home</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
 
     </div>
   </header>
@@ -78,11 +81,11 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#">Departemen Dakwah</a>
-              <a href="#">Departemen BRT</a>
-              <a href="#">Departemen Humas</a>
+              <a href="dakwah.html">Departemen Dakwah</a>
+              <a href="BRT.html">Departemen BRT</a>
+              <a href="Humas.html">Departemen Humas</a>
               <a href="#" class="active">Departemen TI</a>
-              <a href="#">Departemen Ekonomi</a>
+              <a href="Ekonomi.html">Departemen Ekonomi</a>
             </div>
           </div>
 
@@ -137,6 +140,7 @@
           <div class="social-links d-flex">
             <a href="https://www.instagram.com/rohisskiel?igsh=ZnlxaWJ4d3hvY3hn"><i class="bi bi-instagram"></i></a>
           </div>
+          <p><b>@rohisskiel</b></p>
         </div>
 
       </div>
